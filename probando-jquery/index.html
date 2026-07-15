@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricomida</title>
+</head>
+
+<body>
+
+    <p>Si me clickeas dos veces, desapareceré.</p>
+    <p>¡Yo también!</p>
+    <p>¡Yo también!</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script >
+            <script>
+                $(document).ready(function(){
+                    $("p").dblclick(function () {
+                        $(this).hide();
+                    });
+ });
+    </script>
+
+
+</body>
+
+</html>

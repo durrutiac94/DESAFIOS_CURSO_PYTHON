@@ -1,0 +1,7 @@
+# Ejercicio 1: pedir el nombre e imprimir saludo
+# Enunciado: solicita el nombre del usuario y muestra un saludo.
+# Input de ejemplo: nombre = Ana
+# Output esperado (si se corrige): Hola, Ana
+nombre = input("Como te llamas:?\n")
+print(f"Hola, {nombre}")
+

@@ -1,0 +1,21 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    font-size:large;
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 400;
+
+}
+.color-fondo {
+    background-color: #e83e8c;
+
+}
+
+.color-fondo-2 {
+    background-color: #17A2B8;
+}
