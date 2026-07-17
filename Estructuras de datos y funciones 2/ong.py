@@ -1,4 +1,4 @@
-# 1. Función para calcular el factorial (Multiplicación sucesiva)
+# funcion factorial
 def calcular_factorial(n):
     resultado = 1
     for i in range(1, n + 1):
@@ -6,7 +6,7 @@ def calcular_factorial(n):
     return resultado
 
 
-# 2. Función para calcular la productoria (Multiplicación de elementos de una lista)
+# funcion productoria
 def calcular_productoria(lista_numeros):
     resultado = 1
     for numero in lista_numeros:
@@ -14,7 +14,7 @@ def calcular_productoria(lista_numeros):
     return resultado
 
 
-# 3. Función de control principal que acepta argumentos variables (**kwargs)
+# funcion de control
 def calcular(**kwargs):
     for clave, valor in kwargs.items():
         if "fact" in clave:
@@ -25,5 +25,6 @@ def calcular(**kwargs):
             print(f"La productoria de {valor} es {res}")
 
 
-# Ejemplo de ejecución interna tal como lo solicita el PDF
-calcular(fact_1=5, prod_1=[3, 6, 4, 2, 8], fact_2=6)
+# ejecutar la funcion calcular
+
+calcular(fact_1=5, prod_1=[4, 6, 7, 4, 3], fact_2=6)

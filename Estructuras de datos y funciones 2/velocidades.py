@@ -1,6 +1,5 @@
 import sys
 
-# Lista de velocidades entregada en el requerimiento
 velocidades = [
     25,
     12,
@@ -64,16 +63,17 @@ velocidades = [
     21,
 ]
 
-# 1. Calculamos el promedio de manera nativa
+# calcular promedio
 promedio = sum(velocidades) / len(velocidades)
 
-# 2. Inicializamos la lista para almacenar las posiciones
+print(f"el promedio es: \n{promedio}")
+
+# crear lista para agregar los valores sobre el promedio
 posiciones_sobre_promedio = []
 
-# 3. Recorremos usando enumerate para obtener índice y valor al mismo tiempo
+# recorrer la lista para tener el indice de esos valores
 for indice, velocidad in enumerate(velocidades):
     if velocidad > promedio:
         posiciones_sobre_promedio.append(indice)
 
-# 4. Mostramos el resultado esperado en la terminal
-print(posiciones_sobre_promedio)
+print(f"las cintas sobre el promedio son: \n {posiciones_sobre_promedio}")

@@ -9,16 +9,37 @@ precios = {
     "Tarjeta de Video": 1500000,
 }
 
+# umbral
 umbral = int(sys.argv[1])
-menor_mayor = sys.argv[2]
+
+# condiciones
+if len(sys.argv) == 2:
+    condicion = "mayor"
+else:
+    condicion = sys.argv[2].lower()
+
+# funcion de filtrado
 
 
-def filtrar(precio, umbral):
-    for producto, precio in precios.items():
-        if precio > umbral:
-            nuevo_diccionario = {}
-            nuevo_diccionario[producto] = precio
-        return nuevo_diccionario
+def filtrado(umbral, condicion):
+    nuevo_diccionario = {}
+    if condicion == "mayor":
+        for producto, precio in precios.items():
+            if precio > umbral:
+                nuevo_diccionario[producto] = precio
+
+        print(f"Los productos mayores al umbral son: {', '.join(nuevo_diccionario)}")
+
+    elif condicion == "menor":
+        for producto, precio in precios.items():
+            if precio < umbral:
+                nuevo_diccionario[producto] = precio
+
+        print(f"Los productos menores al umbral son: {', '.join(nuevo_diccionario)}")
+
+    else:
+        print("Lo sentimos, no es una operación válida")
 
 
-print(filtrar(precios, 20000))
+# llamar a la funcion
+filtrado(umbral, condicion)
