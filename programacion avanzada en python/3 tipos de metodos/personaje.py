@@ -50,9 +50,11 @@ class Personaje:
 
     @staticmethod
     def info(probabilidad):
-        print(f"Ha aparecido un orco, tienes {probabilidad*100}% probabilidad de ganar")
         print(
-            "si ganas obtienes 50 exp y el orco pierde 30, si pierdes se restan 30 exp y el orco gana 50"
+            f"\nHa aparecido un orco, tienes {probabilidad*100}% probabilidad de ganar"
         )
-        accion_jugador = input("deseas 1. atacar o 2. huir?")
+        print(
+            "si ganas obtienes 50 puntos de experiencia y el orco pierde 30, \n si pierdes se te restaran 30 puntos de experiencia y el orco gana 50"
+        )
+        accion_jugador = input("\ndeseas 1. atacar o 2. huir?: \n")
         return accion_jugador

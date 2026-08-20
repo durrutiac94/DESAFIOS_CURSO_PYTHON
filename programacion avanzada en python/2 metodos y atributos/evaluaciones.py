@@ -1,11 +1,11 @@
 from pizza import Pizza
 
 # 5a.
-print(Pizza.proteina)
-print(Pizza.vegetales)
-print(Pizza.masa)
-print(Pizza.precio)
-print(Pizza.tamaño)
+print(f"ingredientes proteicos: {Pizza.proteina}")
+print(f"ingredientes vegetales: {Pizza.vegetales}")
+print(f"tipo de masa:  {Pizza.masa}")
+print(f"precio: ${Pizza.precio}")
+print(f"tamaño: {Pizza.tamaño}")
 
 # 5.b
 print(Pizza.validar("salsa de tomate", ["salsa de tomate", "salsa bbq"]))
@@ -15,6 +15,7 @@ pedido_pizza = Pizza()
 pedido_pizza.pedir()
 
 # 5.d
+print("\n-- tu pizza: \n")
 print(pedido_pizza.proteina)
 print(pedido_pizza.vegetales)
 print(pedido_pizza.masa)

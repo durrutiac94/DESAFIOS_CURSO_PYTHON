@@ -2,10 +2,10 @@
 
 
 class Producto:
-    def __init__(self, nombre, precio, stock):
+    def __init__(self, nombre, precio, stock=0):
         self._nombre = nombre
         self._precio = precio
-        self.stock = 0
+        self.stock = stock
 
     @property
     def nombre(self):
@@ -17,14 +17,14 @@ class Producto:
 
     @property
     def stock(self):
-        return self.stock
+        return self._stock
 
     @stock.setter
     def stock(self, stock_nuevo):
-        if self.stock_nuevo < 0:
-            self.stock = 0
+        if stock_nuevo < 0:
+            self._stock = 0
         else:
-            self.stock = stock_nuevo
+            self._stock = stock_nuevo
 
     def __eq__(self, other):
         if self.nombre == other.nombre:

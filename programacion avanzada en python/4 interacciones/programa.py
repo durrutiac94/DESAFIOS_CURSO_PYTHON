@@ -1,8 +1,7 @@
-from tienda import Tienda
 from producto import Producto
 from tienda import Restaurante, Supermercado, Farmacia
 
-# 1 crear la tienda
+# crear menu interactivo
 
 print("Bienvenido al menu")
 nombre = input("ingresa el nombre de la tienda: ")
@@ -22,3 +21,28 @@ elif tipo == "3":
 else:
     print("Opción no válida. Cerrando el programa...")
     exit()
+
+while True:
+    opcion = input(
+        "Que deseas hacer: \n 1. ingresar producto \n 2. listar productos \n 3. realizar una venta \n 4. Salir \n"
+    )
+
+    if opcion == "1":
+        nombre = input("ingresa nombre: ")
+        precio = int(input("ingresa precio: "))
+        stock = int(input("ingresa stock: "))
+        producto = Producto(nombre, precio, stock)
+        mi_tienda.ingresar_producto(producto)
+        print(f"el producto{nombre}fue ingresado")
+    elif opcion == "2":
+        print(mi_tienda.listar_productos())
+    elif opcion == "3":
+        nombre = input("ingresa el nombre del producto: ")
+        cantidad = int(input("ingresa la cantidad: "))
+        mi_tienda.realizar_venta(nombre, cantidad)
+        print(f"venta: {cantidad} {nombre}")
+    elif opcion == "4":
+        print("saliendo del programa...")
+        exit()
+    else:
+        print("Opcion no valida, por favor ingresa nuevamente...")

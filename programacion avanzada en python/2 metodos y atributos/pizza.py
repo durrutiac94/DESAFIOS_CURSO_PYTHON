@@ -29,14 +29,14 @@ class Pizza:
     #
 
     def pedir(self):
-        self.prot = input(f"ingresa tu ingrediente proteico: {ingredientes_proteicos}")
-        vegetal1 = input(f"inrgesa el primer vegetal {ingredientes_vegetales}")
-        vegetal2 = input(f"inrgesa el segundo vegetal {ingredientes_vegetales}")
-        self.veg = [vegetal1, vegetal2]
-        self.masa = input(f"ingresa el tipo de masa: {tipo_de_masa}")
+        self.proteina = input(f"ingresa tu ingrediente proteico: ")
+        vegetal1 = input(f"inrgesa el primer vegetal: ")
+        vegetal2 = input(f"inrgesa el segundo vegetal: ")
+        self.vegetales = [vegetal1, vegetal2]
+        self.masa = input(f"ingresa el tipo de masa: ")
 
         # 4 realizar validacion
-        validar_proteina = Pizza.validar(self.prot, Pizza.proteina)
+        validar_proteina = Pizza.validar(self.proteina, Pizza.proteina)
         validar_veg1 = Pizza.validar(vegetal1, Pizza.vegetales)
         validar_veg2 = Pizza.validar(vegetal2, Pizza.vegetales)
         validar_masa = Pizza.validar(self.masa, Pizza.masa)

@@ -34,7 +34,7 @@ class Tienda(ABC):
     def listar_productos(self):
         texto = " "
         for producto in self.listado_productos:
-            texto += f"nombre:{producto.nombre}, precio:{producto.precio}, stock:{producto.stock}"
+            texto += f"nombre: {producto.nombre}, precio: {producto.precio}, stock: {producto.stock}"
         return texto
 
 
@@ -51,7 +51,7 @@ class Restaurante(Tienda):
     def listar_productos(self):
         texto = " "
         for producto in self.listado_productos:
-            texto += f"nombre:{producto.nombre}, precio:{producto.precio}"
+            texto += f"nombre: {producto.nombre}, precio: {producto.precio}"
         return texto
 
     def realizar_venta(self, nombre_producto, cantidad):
@@ -64,7 +64,7 @@ class Supermercado(Tienda):
     def listar_productos(self):
         texto = " "
         for producto in self.listado_productos:
-            texto += f"nombre:{producto.nombre}, precio:{producto.precio}, stock{producto.stock}"
+            texto += f"nombre: {producto.nombre}, precio: {producto.precio}, stock: {producto.stock}"
             if producto.stock < 10:
                 texto += f" Pocos productos disponibles"
 
