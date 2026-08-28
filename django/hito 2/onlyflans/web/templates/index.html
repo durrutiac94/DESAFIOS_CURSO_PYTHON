@@ -1,16 +1,17 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block 'content' %}
+{% block content %}
 
 <div class="text-center">
   <h4>Nuestros flanes</h4>
 </div>
 
-<section class="container-fluid">
+<section>
+<div class="container">
 <div class="row row-cols-1 row-cols-md-3 ">
 {% for flan in productos %}
   <div class="col">
-    <img src="{% static 'flan.jpg' %}" class="card-img-top" alt="...">
+    <img src="{{flan.url}}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">{{ flan.nombre}}</h5>
       <p class="card-text">{{ flan.descripcion }}</p>
@@ -19,6 +20,8 @@
   </div>
   {% endfor %}
 </div>
+</div>
 </section>
 
 {% endblock %}
+
