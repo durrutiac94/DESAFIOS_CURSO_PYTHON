@@ -1,4 +1,5 @@
 from django.db import models
+from django.forms import ModelForm
 import uuid
 
 # Create your models here.
@@ -21,7 +22,7 @@ class Flan(models.Model):
         return f"{self.name} - ({self.flan_uuid}) - EsPrivado?:{self.is_private}"
 
 
-class ContactFormModelForm(models.Model):
+class ContactForm(models.Model):
     contact_form_uuid = models.UUIDField(
         primary_key=True, editable=False, default=uuid.uuid4
     )

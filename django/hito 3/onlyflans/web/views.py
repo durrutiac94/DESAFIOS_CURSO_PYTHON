@@ -21,19 +21,15 @@ def acerca(request):
 def contacto(request):
     if request.method == "POST":
         print(request.POST)
-        form = forms.ContactFormForm(request.POST)
+        form = forms.ContactFormModelForm(request.POST)
         if form.is_valid():
-            # guardar la respuesta del usuario en la base de datos
-            """
-            INSERT INTO ContactForm
-            VALUES(...,...,...);
-            """
+
             models.ContactForm.objects.create(**form.cleaned_data)
 
             return redirect("exito")
 
     elif request.method == "GET":
-        form = forms.ContactFormForm()
+        form = forms.ContactFormModelForm()
     contexto = {"form": form}
     return render(request, "contactus.html", contexto)
 
