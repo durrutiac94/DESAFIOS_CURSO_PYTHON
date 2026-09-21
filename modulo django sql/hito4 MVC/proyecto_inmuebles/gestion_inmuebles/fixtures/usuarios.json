@@ -1,0 +1,21 @@
+[
+    {
+        "model": "gestion_inmuebles.usuario",
+        "pk": 10,
+        "fields": {
+            "nombre":"Casa de campo",
+            "descripcion":"",
+            "m2_construidos":"",
+            "m2_totales":"",
+            "estacionamientos":"",
+            "banos":"",
+            "direccion":"",
+            "comuna":"",
+            "tipo_inmueble":"",
+            "precio_mensual":"",
+            "dueno":"",
+            "fecha_creacion":"",
+            "ultima_modificacion":"",
+        }
+    }
+]

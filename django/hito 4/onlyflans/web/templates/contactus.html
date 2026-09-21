@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div>
+  <h2 class="text-center mb-4">Contáctanos</h2>
+</div>
+
 <form action="{% url 'contacto' %}" method="post">
         {% csrf_token %}
         {{ form.non_field_errors }}

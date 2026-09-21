@@ -20,6 +20,21 @@ def acerca(request):
     return render(request, "about.html")
 
 
+def oportunidades(request):
+    ofertas = [
+        {"nombre": "Vendedor/a", "descripcion": "Atención de clientes en la tienda."},
+        {
+            "nombre": "Cajero/a",
+            "descripcion": "Recepción de pagos y atención de clientes.",
+        },
+        {
+            "nombre": "Maestro/a pastelero/a",
+            "descripcion": "Preparación de flanes y otros postres.",
+        },
+    ]
+    return render(request, "oportunidades.html", {"ofertas": ofertas})
+
+
 def contacto(request):
     if request.method == "POST":
         print(request.POST)

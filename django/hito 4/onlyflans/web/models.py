@@ -17,6 +17,8 @@ class Flan(models.Model):
 
     is_private = models.BooleanField()
 
+    precio = models.IntegerField()
+
     def __str__(self):
         return f"{self.name} - ({self.flan_uuid}) - EsPrivado?:{self.is_private}"
 

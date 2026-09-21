@@ -1,0 +1,37 @@
+[
+    {
+        "model": "gestion_inmuebles.region",
+        "pk": 1,
+        "fields": {
+            "nombre": "Departamento"
+        }
+    }
+        {
+        "model": "gestion_inmuebles.region",
+        "pk": 1,
+        "fields": {
+            "nombre": "Casa"
+        }
+    }
+        {
+        "model": "gestion_inmuebles.region",
+        "pk": 1,
+        "fields": {
+            "nombre": "Parcela"
+        }
+    }
+        {
+        "model": "gestion_inmuebles.region",
+        "pk": 1,
+        "fields": {
+            "nombre": "Estacionamiento"
+        }
+    }
+        {
+        "model": "gestion_inmuebles.region",
+        "pk": 1,
+        "fields": {
+            "nombre": "Otro"
+        }
+    }
+]
