@@ -1,21 +1,23 @@
-from django.contrib import admin
-
 # Register your models here.
 from django.contrib import admin
 from .models import Inmueble, Usuario, Region, Comuna, Solicitud
 from django.contrib.auth.admin import UserAdmin
 
 # Register your models here.
-admin.site.register(Region)
-admin.site.register(Solicitud)
 
 
 @admin.register(Inmueble)
 class InmuebleAdmin(admin.ModelAdmin):
     list_display = ("nombre", "direccion", "precio_mensual")
     search_fields = ("nombre", "direccion")
-    list_filter = ("precio_mensual", "comuna__region", "tipo_inmueble")
+    list_filter = ("precio_mensual", "comuna__region")
     readonly_fields = ("fecha_creacion", "ultima_modificacion")
+
+
+@admin.register(Region)
+class RegionAdmin(admin.ModelAdmin):
+    list_display = ("nombre",)
+    search_fields = ("nombre",)
 
 
 @admin.register(Comuna)

@@ -16,6 +16,12 @@ def registro(request):
             login(request, user)  # Automatically logs the user in after registration
             return redirect("indice")  # Change 'home' to your desired redirect URL name
     else:
-        form = forms.CustomUserCreationForm
+        form = forms.CustomUserCreationForm()
 
     return render(request, "registration/register.html", {"form": form})
+
+
+"""from django.shortcuts import render, redirect
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import login
+from .forms import CustomUserCreationForm"""

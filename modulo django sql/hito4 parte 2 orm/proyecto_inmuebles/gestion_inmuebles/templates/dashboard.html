@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="container">
+<div class= text-center>
+    <h4>Bienvenido {{ request.user.first_name | capfirst}} {{ request.user.last_name | capfirst}}</h4>
+    <h5>Usuario: {{ request.user.username}} </h5>
+    <h5>Correo: {{ request.user.email}} </h5>
+    <h5>RUT: {{ request.user.rut}} </h5>
+    <a href="{% url 'actualizar_perfil' %}">Actualizar Perfil</a>
+    <br>
+    <a href="{% url 'agregar_inmueble' %}">Agregar Inmueble</a>
+</div>
+
+<div class="text-center mt-5">
+  <h4>Tus Propiedades</h4>
+</div>
+
+
+<div class="container">
+<div class="row row-cols-1 row-cols-md-4 ">
+{% for inmueble in inmuebles %}
+  <div class="col">
+    <img src="{{ inmueble.image_url }}" class="card-img-top" alt="..." style="height: 250px;">
+    <div class="card-body">
+      <h5 class="card-title">{{ inmueble.nombre}}</h5>
+      <p class="card-text">{{ inmueble.descripcion }}</p>
+      <p class="card-text">Precio: ${{ inmueble.precio_mensual }}</p>
+      <a class="btn btn-success" href="{%  url 'actualizar_inmueble' inmueble.id %}">ACTUALIZAR</a>
+      <a class="btn btn-danger" href="{%  url 'borrar_inmueble' inmueble.id %}">BORRAR</a>
+    </div>
+  </div>
+  
+  {% endfor %}
+</div>
+</div>
+</section>
+
+
+
+{% endblock %}
+

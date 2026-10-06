@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Daniel Urrutia</title>
+    <link rel="icon" type="image/svg+xml" href="assets\img\briefcase-solid.png">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- font awesome-->
+    <script src="https://kit.fontawesome.com/30b33c1776.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container text-center my-5" id="inicio">
+        <h1 class="text-center">Portafolio Daniel Urrutia </h1>
+    </div>
+
+    
+    <div class="container barra-nav sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-center gap-3">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#acerca">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container acerca my-5" id="acerca">
+        <h1 class="text-center my-5"> Acerca de mi </h1>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-4 mx-md-5 mb-4 mb-md-0 d-flex justify-content-center">
+                <img class="about-image" src="assets/img/watermarked_img_12851596663700005260.jpg" alt="Foto-perfil-github" style="border-radius: 10%; ">
+            </div>
+            <div class="col-12 col-md-4 mx-md-5">
+                <p class="about-text">Soy Daniel Urrutia, alumno del Bootcamp de Desarrollo de Aplicaciones Full Stack Python.
+                <br><br>
+                Espero seguir perfeccionando mis conocimientos en el área del desarrollo web y ampliar mis oportunidades laborales.
+                <br><br>
+                Te invito a conocer los proyectos que he desarrollado en el bootcamp y de manera personal, cualquier consulta no dudes en contactarme.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container habilidades my-5" id="habilidades">
+        <div>
+            <h1> Habilidades</h1>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <img src="assets\img\logo-html.png" class="card-img-top" alt="logo-html">
+                <div class="card-body">
+                <h5 class="card-title">HTML5</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets\img\logo-bootstrap.png" class="card-img-top" alt="logo-bootstrap">
+                <div class="card-body">
+                <h5 class="card-title">BOOTSTRAP</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets\img\logo-python.png" class="card-img-top" alt="logo-python">
+                <div class="card-body">
+                <h5 class="card-title">PYTHON</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets\img\logo-django.png" class="card-img-top" alt="logo-django">
+                <div class="card-body">
+                <h5 class="card-title">DJANGO</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container proyectos my-5" id="proyectos">
+        <h1 class="text-center"> Proyectos </h1>
+            <div class="card-group">
+                <a class="card text-decoration-none text-reset" href="https://durrutiac94.github.io/Viajes_Chile/">
+                <img src="assets\img\logo-viajeschile.jpg" class="card-img-top" alt="viajes-chile">
+                <div class="card-body">
+                <h2 class="card-title">Sitio Web Turistico</h2>
+                </div>
+                </a>
+                <a class="card text-decoration-none text-reset" href="https://webbb-arriendos.onrender.com/">
+                    <img src="assets\img\logo-webbbariendos.jpg" class="card-img-top" alt="webbb-arriendos">
+                    <div class="card-body">
+                    <h2 class="card-title">Sitio Web Arriendo Inmuebles</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container contacto my-5 text-center" id="contacto">
+        <h1 class="mb-4">Contacto</h1>
+        <div class="contacto-enlaces">
+            <a class="contacto-link" href="https://github.com/durrutiac94" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github fa-3x" aria-hidden="true"></i>
+                <span>GitHub</span>
+            </a>
+            <a class="contacto-link" href="https://www.linkedin.com/in/daniel-urrutia-carvajal" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin fa-3x" aria-hidden="true"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a class="contacto-link" href="mailto:durrutiac94@gmail.com">
+                <i class="fa-solid fa-envelope fa-3x" aria-hidden="true"></i>
+                <span>durrutiac94@gmail.com</span>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

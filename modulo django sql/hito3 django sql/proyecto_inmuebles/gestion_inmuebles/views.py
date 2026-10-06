@@ -1,11 +1,13 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login
 from . import forms
+from .models import Inmueble
 
 
 # Create your views here.
 def index(request):
-    return render(request, "index.html", {})
+    inmuebles = Inmueble.objects.select_related("comuna", "tipo_inmueble").all()
+    return render(request, "index.html", {"inmuebles": inmuebles})
 
 
 def registro(request):

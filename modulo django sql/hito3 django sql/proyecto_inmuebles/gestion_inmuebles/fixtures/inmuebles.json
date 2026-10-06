@@ -1,0 +1,82 @@
+[
+  {
+    "model": "gestion_inmuebles.inmueble",
+    "pk": 1,
+    "fields": {
+      "nombre": "casa",
+      "descripcion": "casa bbb",
+      "m2_construidos": 50.0,
+      "m2_totales": 60.0,
+      "estacionamientos": 1,
+      "habitaciones": 2,
+      "banos": 2,
+      "direccion": "asdf",
+      "comuna": 1,
+      "precio_mensual": "99999999.99",
+      "tipo_inmueble": 1,
+      "dueno": 3,
+      "fecha_creacion": "2026-09-22T22:14:01.854Z",
+      "ultima_modificacion": "2026-09-22T22:14:01.854Z"
+    }
+  },
+  {
+    "model": "gestion_inmuebles.inmueble",
+    "pk": 2,
+    "fields": {
+      "nombre": "departamento centro",
+      "descripcion": "Departamento luminoso cercano a servicios y transporte publico.",
+      "m2_construidos": 72.0,
+      "m2_totales": 78.0,
+      "estacionamientos": 1,
+      "habitaciones": 3,
+      "banos": 2,
+      "direccion": "Avenida Libertad 245",
+      "comuna": 1,
+      "precio_mensual": "650000.00",
+      "tipo_inmueble": 1,
+      "dueno": 4,
+      "fecha_creacion": "2026-09-22T22:20:00Z",
+      "ultima_modificacion": "2026-09-22T22:20:00Z"
+    }
+  },
+  {
+    "model": "gestion_inmuebles.inmueble",
+    "pk": 3,
+    "fields": {
+      "nombre": "casa familiar",
+      "descripcion": "Casa con patio amplio, quincho y espacio para dos vehiculos.",
+      "m2_construidos": 110.0,
+      "m2_totales": 240.0,
+      "estacionamientos": 2,
+      "habitaciones": 4,
+      "banos": 3,
+      "direccion": "Pasaje Los Aromos 1180",
+      "comuna": 1,
+      "precio_mensual": "980000.00",
+      "tipo_inmueble": 1,
+      "dueno": 5,
+      "fecha_creacion": "2026-09-22T22:21:00Z",
+      "ultima_modificacion": "2026-09-22T22:21:00Z"
+    }
+  },
+  {
+    "model": "gestion_inmuebles.inmueble",
+    "pk": 4,
+    "fields": {
+      "nombre": "parcela rural",
+      "descripcion": "Parcela tranquila con areas verdes y acceso por camino principal.",
+      "m2_construidos": 85.0,
+      "m2_totales": 5000.0,
+      "estacionamientos": 3,
+      "habitaciones": 3,
+      "banos": 2,
+      "direccion": "Camino El Molino 560",
+      "comuna": 1,
+      "precio_mensual": "1200000.00",
+      "tipo_inmueble": 1,
+      "dueno": 3,
+      "fecha_creacion": "2026-09-22T22:22:00Z",
+      "ultima_modificacion": "2026-09-22T22:22:00Z"
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div>
+    <h4 class= text-center>Bienvenido {{ request.user.username | capfirst}}</h4>
+    <div class=text-center>
+    Nombre: {{ request.user.first_name }}  {{ request.user.last_name }}
+    <br>
+   
+    Correo: {{ request.user.email }}
+    <br>
+
+    RUT: {{ request.user.rut }}
+    <br>
+    <a href="{% url 'actualizar_perfil' %}">Actualizar Perfil</a>
+     </div>
+</div>
+
+
+{% endblock %}
+

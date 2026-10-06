@@ -53,9 +53,8 @@ class Inmueble(models.Model):
     tipo_inmueble = models.CharField(max_length=50, choices=TIPO_INMUEBLE)
     dueno = models.ForeignKey(Usuario, on_delete=models.CASCADE)
 
-
-def __str__(self):
-    return self.nombre
+    def __str__(self):
+        return f"{self.nombre} {self.descripcion}"
 
 
 class Solicitud(models.Model):

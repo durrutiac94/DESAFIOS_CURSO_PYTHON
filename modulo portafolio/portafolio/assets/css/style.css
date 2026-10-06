@@ -1,0 +1,98 @@
+
+body {
+    background: linear-gradient(135deg, #879b8d 0%, #78b85a 100%);
+    font-family: "Fredoka", sans-serif;
+    min-height: 100vh;
+}
+
+#inicio,
+#sobre-mi,
+#habilidades,
+#proyectos,
+#contacto {
+    scroll-margin-top: 5rem;
+}
+
+.barra-nav {
+    font-size: larger;
+}
+
+.about-image {
+    max-width: 320px;
+    height: auto;
+    width: 100%;
+}
+
+.about-text {
+    font-size: large;
+    text-align: justify;
+}
+
+.habilidades {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.habilidades .card-group {
+    justify-content: center;
+}
+
+.habilidades .card {
+    background: none;
+    border: none;
+    max-width: 200px;
+}
+
+.habilidades .card-img-top {
+    height: 70px;
+    margin: 0 auto;
+    object-fit: contain;
+    width: 100px;
+}
+
+.habilidades .card-title {
+    font-size: medium;
+    text-align: center;
+}
+
+.proyectos .card-group {
+    gap: 1rem;
+    font-size: x-large;
+    justify-content: center;
+    text-align: center;
+}
+
+.proyectos .card {
+    background: none;
+    border: none;
+}
+
+.proyectos .card-img-top {
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    object-fit: contain;
+
+}
+
+.contacto-enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.contacto-link {
+    align-items: center;
+    color: inherit;
+    display: inline-flex;
+    font-size: large;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.contacto-link:hover {
+    text-decoration: underline;
+}
